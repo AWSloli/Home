@@ -10,7 +10,7 @@
 
 } 
 body {
-	background-color:#999999;	/*ページ全体の背景色*/
+	background-color:#e6e6fa;	/*ページ全体の背景色*/
 	text-align:center;		/*IE6以下でセンタリングするための対策*/
 }
 div#pagebody {
@@ -28,7 +28,7 @@ div#header {
 	height:77px;	/*背景画像のサイズに合わせてボックスの高さを指定*/
 	background-image:url("images/bg_header.jpg");	/*ヘッダ部分の背景画像*/
 	background-repeat:no-repeat;		/*背景画像を繰り返さない*/
-	background-color:#cccccc;		/*ヘッダ部分の背景色*/
+	background-color:#f0f8ff;		/*ヘッダ部分の背景色*/
 }
 h1 {
 	padding:20px 0px 0px 30px;		/*見出し内容の位置調整*/
@@ -40,7 +40,7 @@ h1 a {text-decoration:none;} 			/*リンクの下線を無くす*/
 メインメニュー
 ============================================*/
 ul#menu {
-	height:42px; background-color:#eeeeee; font-weight:bold;
+	height:42px; background-color:#afeeee; font-weight:bold;
 }
 li#menu01,li#menu02,li#menu03,li#menu04,li#menu05 {
 	float:left;			/*リスト項目を横に並べる*/
@@ -92,7 +92,7 @@ div#submenu_header {
 	height:26px; padding:4px 0px 0px 0px;
 	background-image:url("images/bg_submenu_header.gif");
 	background-repeat:no-repeat; background-position:top;
-	background-color:#cccccc;
+	background-color:#f0f8ff;
 	font-size:90%; font-weight:bold; text-align:center;
 }
 
@@ -101,7 +101,7 @@ ul#submenu_body {
 	padding-bottom:6px;
 	background-image:url("images/bg_submenu_footer.gif");
 	background-repeat:no-repeat; background-position:bottom;
-	background-color:#cccccc;
+	background-color:#f0f8ff;
 }
 ul#submenu_body li {
 	font-size:90%;			/*文字サイズを90%にする*/
@@ -112,7 +112,7 @@ ul#submenu_body li a {
 	display:block;			/*リンクをブロック表示にする*/
 	margin:0px 4px 0px 4px;		/*サブメニュー項目のマージン*/
 	padding:2px 0px 2px 20px;	/*サブメニュー項目のパディング*/
-	background-color:#eeeeee;	/*サブメニュー項目の背景色*/
+	background-color:#f0f8ff;	/*サブメニュー項目の背景色*/
 	text-decoration:none;		/*リンクの下線を無くす*/
 }
 ul#submenu_body li a:hover {
@@ -140,13 +140,13 @@ div#news {
 /*見出し・段落・水平線のスタイル指定*/
 h2 {
 	font-size:100%; margin-bottom:10px; padding-left:25px;
-	font-size:95%; border-bottom:solid 1px #cccccc;
+	font-size:95%; border-bottom:solid 1px #f0f8ff;
 	background-image:url("images/icon.gif");
 	background-repeat:no-repeat; background-position:left center;
 }
 h3 {font-size:90%; margin-left:5px;}
 p {font-size:90%; margin:10px 0px 10px 10px; text-indent:10px;}
-hr {height:1px; border:solid 1px #cccccc; margin-bottom:30px;}
+hr {height:1px; border:solid 1px #f0f8ff; margin-bottom:30px;}
 
 /*============================================
 ピックアップ（右カラム）
@@ -174,7 +174,7 @@ div#footer {
 	clear:both;					/*回り込みを解除する*/
 	background-image:url("images/bg_footer.jpg");	/*フッタ部分の背景画像*/
 	background-repeat:no-repeat;			/*背景画像を繰り返さない*/
-	background-color:#cccccc;			/*フッタ部分の背景色*/
+	background-color:#f0f8ff;			/*フッタ部分の背景色*/
 }
 address {
 	font-style:normal;			 /*フォントスタイルを標準にする*/
