@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>タイトル</title>
+<script src="seedrandom.js"></script>
+</head>
+
+
+<p><img id="Gazou00" src=""></p>
+<p><form name="For00"><textarea name="Memo00" cols=100 rows=4></textarea></form></p>
+<br>
+<a href="index.html">戻る</a>
+
+<script>
+
+<!--乱数-->
+
+// 今日の日付を取得
+const today = new Date();
+
+// 日付を文字列に変換して、種を生成
+const seed = today.toISOString().slice(0, 10);
+
+// 外部ライブラリ seedrandom.js を読み込む
+// seedrandom.js のインストール方法については、公式ドキュメントを参照してください
+// https://github.com/davidbau/seedrandom
+// seedrandom() 関数に種を渡すことで、Math.random() の結果が変化する
+Math.seedrandom(seed);
+
+// 0以上1未満のランダムな数値を生成
+const randomNum = Math.random();
+
+console.log(randomNum);
+
+<!--文章/画像-->
+
+//メイド
+
+MaidName = "あい　18歳";
+MaidGazou = "Gazou/00.png"
+
+if(randomNum<0.1) {
+	MaidName = "ユリア　18歳";
+	MaidGazou = "Gazou/01.png"
+}
+if(randomNum>0.1 && randomNum<=0.2) {
+	MaidName = "クローナ　12歳";
+	MaidGazou = "Gazou/02.png"
+}
+if(randomNum>0.2 && randomNum<=0.3) {
+	MaidName = "アリス　14歳";
+	MaidGazou = "Gazou/03.png"
+}
+if(randomNum>0.3 && randomNum<=0.4) {
+	MaidName = "アスチュート　17歳";
+	MaidGazou = "Gazou/04.png"
+}
+if(randomNum>0.4 && randomNum<=0.5) {
+	MaidName = "ゆき　16歳";
+	MaidGazou = "Gazou/05.png"
+}
+if(randomNum>0.5 && randomNum<=0.6) {
+	MaidName = "まい　16歳";
+	MaidGazou = "Gazou/06.png"
+}
+if(randomNum>0.6 && randomNum<=0.7) {
+	MaidName = "ドリー　17歳";
+	MaidGazou = "Gazou/06.png"
+}
+if(randomNum>0.7 && randomNum<=0.8) {
+	MaidName = "ナーシャ　16歳";
+	MaidGazou = "Gazou/06.png"
+}
+if(randomNum>0.8 && randomNum<=0.9) {
+	MaidName = "メアリ　15歳";
+	MaidGazou = "Gazou/06.png"
+}
+
+window.document.getElementById("Gazou00").src=MaidGazou;
+
+//内容
+
+randomNumB = randomNum*100%1;
+
+Naiyou = "お仕事中、どうしてもオシッコに行きたくなってしまい、ご主人様に紅茶の給仕に来た際にコッソリ許可をもらってトイレに行きました。\nトイレの我慢もできないメイドには、明日からはオムツを履いてもらおう。";
+
+if (randomNumB<0.1) {
+	Naiyou = "お仕事中、オシッコがしたくなってしまい、コソコソと前押さえをしながらお仕事をし、昼休みになった途端にトイレへ駆け込んだ。\nしぃぃぃぃぃぃぃという気持ち良さそうな音が響いていた。";
+}
+
+if (randomNumB>0.1 && randomNumB<=0.2) {
+	Naiyou = "お仕事中、オシッコが我慢できなくなってしまい、ついに廊下でしゃがみお漏らしをしてしまった。";
+}
+
+if (randomNumB>0.2 && randomNumB<=0.3) {
+	Naiyou = "お仕事中、オシッコが我慢できなくなってしまったらしく、オムツの中でお漏らししてしまったらしい。\n大人用の大きなオムツがまっ黄色になっていた。";
+}
+
+if (randomNumB>0.3 && randomNumB<=0.4) {
+	Naiyou = "お昼休みまでは我慢できたものの、トイレの順番待ちで我慢できなくなり、そのままお漏らししてしまった。\n我慢できないなら、「お漏らしちゃうから、先におトイレ入れてください」って言えるようにならないとダメだよ。";
+}
+
+if (randomNumB>0.4 && randomNumB<=0.5) {
+	Naiyou = "お仕事中にオシッコが我慢できなくなったらしく、お尻をフリフリしたり、おまたを押さえたりしているところをご主人様が目撃し、あきれたご主人様が特別におトイレの許可を出してあげました。\n「申し訳ございません」と言いながら、ダッシュでトイレに走っていったよ。";
+}
+
+if (randomNumB>0.5 && randomNumB<=0.6) {
+	Naiyou = "お仕事中にオシッコが我慢できなくなったらしく、お尻をフリフリしたり、おまたを押さえたりしているところをご主人様が目撃し、あきれたご主人様が特別におトイレの許可を出してあげました。\n「申し訳ございません」と言いながら、ダッシュでトイレに走っていったよ。";
+}
+
+if (randomNumB>0.6 && randomNumB<=0.7) {
+	Naiyou = "おねしょをしてしまったらしく、罰として干されたおねしょベットの前で掃除をさせられていた。\nよっぽど恥ずかしかったらしく、ずっと俯いて掃除していた。";
+}
+
+if (randomNumB>0.7 && randomNumB<=0.8) {
+	Naiyou = "今日はお水やり当番だったらしい。朝から利尿作用たっぷりの紅茶を飲まされ、お仕事が始まると真っ先にお庭に行って、お花に水やりをしていた。\nいっぺんに全部出したら他の花に水をやれないから、また紅茶を飲まされていたよ。";
+}
+
+if (randomNumB>0.8 && randomNumB<=0.9) {
+	Naiyou = "今日は回覧板当番だったらしい。村の端のお宅まで回覧板を届けた後、オシッコが我慢できないからって、帰りに川でオシッコしている姿を他の使用人に目撃されていた。\nいい年なのに、お尻丸出しでオシッコなんて恥ずかしくないのか。メイド長に怒られていたよ。";
+}
+
+window.document.For00.Memo00.defaultValue = MaidName+"\n"+Naiyou;
+
+<!--その他-->
+
+window.document.bgColor='lavender';
+
+</script>
+
+</body>
+</html>
